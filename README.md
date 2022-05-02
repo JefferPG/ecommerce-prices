@@ -60,3 +60,5 @@ Desarrollar unos test al endpoint rest que  validen las siguientes peticiones al
 - Resultados correctos en los test.
 
 ### Solución por: Jefferson Pérez.
+
+![img.png](img.png)
