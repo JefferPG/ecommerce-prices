@@ -1,14 +1,6 @@
-# price-api
+# ecommerce-price
 
-# Technologies
-
-- Java 11
-- Spring boot
-- Maven
-- H2
-- lombok
-
-# Problem to resolve
+## Problema
 
 En la base de datos de comercio electrónico de la compañía disponemos de la tabla PRICES que refleja el precio final (pvp) y la tarifa que aplica a un producto de una cadena entre unas fechas determinadas. A continuación se muestra un ejemplo de la tabla con los campos relevantes:
 
@@ -25,15 +17,15 @@ En la base de datos de comercio electrónico de la compañía disponemos de la t
 
 ### Campos:
 
-| CAMPO       | DESCRIPCION                                                                                                                                |
-|:------------|:-------------------------------------------------------------------------------------------------------------------------------------------|
-| BRAND_ID:   | foreign key de la cadena del grupo (1 = ZARA).                                                                                             |
-| START_DATE: | END_DATE: rango de fechas en el que aplica el precio tarifa indicado.                                                                      |
-| PRICE_LIST: | Identificador de la tarifa de precios aplicable.                                                                                           |
-| PRODUCT_ID: | Identificador código de producto.                                                                                                          |
-| PRIORITY:   | Desambiguador de aplicación de precios. Si dos tarifas coinciden en un rago de fechas se aplica la de mayor prioridad (mayor valor numérico). |
-| PRICE:      | precio final de venta.                                                                                                                     |
-| CURR:       | iso de la moneda.                                                                                                                          |
+| CAMPO      | DESCRIPCION                                                                                                                                   |
+|:-----------|:----------------------------------------------------------------------------------------------------------------------------------------------|
+| BRAND_ID   | foreign key de la cadena del grupo (1 = ZARA).                                                                                                |
+| START_DATE<br/>END_DATE | rango de fechas en el que aplica el precio tarifa indicado.                                                                                   |
+| PRICE_LIST | Identificador de la tarifa de precios aplicable.                                                                                              |
+| PRODUCT_ID | Identificador código de producto.                                                                                                             |
+| PRIORITY   | Desambiguador de aplicación de precios. Si dos tarifas coinciden en un rago de fechas se aplica la de mayor prioridad (mayor valor numérico). |
+| PRICE      | precio final de venta.                                                                                                                        |
+| CURR       | iso de la moneda.                                                                                                                             |
 
 ### Se pide:
 
@@ -60,5 +52,13 @@ Desarrollar unos test al endpoint rest que  validen las siguientes peticiones al
 - Resultados correctos en los test.
 
 ### Solución por: Jefferson Pérez.
+
+### Technologies
+
+- Java 11
+- Spring boot
+- Maven
+- H2
+- lombok
 
 ![img.png](img.png)
